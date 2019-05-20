@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+{{ disciplina.nome }}
+{% endblock titulo %}
+
+
+{% block main %}
+
+
+<h1 class="text-center w-100">{{ disciplina.nome }}</h1>
+<br>
+<section class="sobre border bg-light border-primary mx-2 p-3 w-75">
+<h2 >Plano de ensino</h2>
+<p>{{disciplina.plano_ensino}}</p>
+
+<h2>Especificações</h2>
+<p>coordenador:  {{disciplina.coordenador}}</p>
+<p >carga horaria: {{disciplina.carga_horaria}} horas</p>
+</section>
+
+{% endblock main %}
